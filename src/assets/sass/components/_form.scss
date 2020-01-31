@@ -3,3 +3,20 @@
   text-align: left;
   width: 45rem;
 }
+.btn-form {
+  width: 8rem;
+  margin-right: 2rem;
+  border: none;
+}
+.submit {
+  background-color: $md-blue;
+  &:hover {
+    background-color: $dk-blue;
+  }
+}
+.reset {
+  background-color: $md-red;
+  &:hover {
+    background-color: $dk-red;
+  }
+}

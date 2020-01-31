@@ -11,23 +11,24 @@
       </b-form-group>
 
       <b-form-group id="input-group-2" label="Ingredients:" label-for="input-2">
-        <b-form-input
+        <b-form-textarea
           id="input-2"
           v-model="form.ingredients"
           required
+          multiple
           placeholder="Enter Ingredients"
-        ></b-form-input>
+        ></b-form-textarea>
       </b-form-group>
       <b-form-group id="input-group-3" label="Instruction:" label-for="input-3">
-        <b-form-input
+        <b-form-textarea
           id="input-3"
           v-model="form.instruction"
           required
           placeholder="Enter Instruction"
-        ></b-form-input>
+        ></b-form-textarea>
       </b-form-group>
-      <b-button type="submit" variant="primary">Submit</b-button>
-      <b-button type="reset" variant="danger">Reset</b-button>
+      <b-button type="reset" class="btn-form reset">Reset</b-button>
+      <b-button type="submit" class="btn-form submit">Submit</b-button>
     </b-form>
   </div>
 </template>
@@ -40,15 +41,7 @@ export default {
         name: "",
         ingredients: "",
         instruction: ""
-      },
-      foods: [
-        { text: "Select One", value: null },
-        "Carrots",
-        "Beans",
-        "Tomatoes",
-        "Corn"
-      ],
-      show: true
+      }
     };
   },
   methods: {
