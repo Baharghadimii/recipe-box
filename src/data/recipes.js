@@ -1,4 +1,4 @@
-[{
+export default [{
   name: 'Black Bean Breakfast Bowl',
   ingredients: '2 tablespoons olive oil, 4 eggs, beaten, 1 (15 ounce) can black beans, drained and rinsed, 1 avocado, peeled and sliced, 1/4 cup salsa, salt and ground black pepper to taste',
   instruction: 'Heat olive oil in a small pan over medium heat. Cook and stir eggs until eggs are set, 3 to 5 minutes. \nPlace black beans in a microwave-safe bowl. Heat on High in the microwave until warm, about 1 minute.\nDivide warmed black beans between two bowls.\nTop each bowl with scrambled eggs, avocado, and salsa. Season with salt and black pepper.',
