@@ -1,0 +1,8 @@
+.list-item {
+  background-color: $blue;
+  cursor: pointer;
+  &:hover {
+    background-color: $dk-blue;
+    color: $white;
+  }
+}
