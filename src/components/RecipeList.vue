@@ -1,7 +1,7 @@
 <template>
   <div>
-    <b-list-group class="w-75 p-3 mb-1 mx-auto">
-      <b-list-group-item class="h5 list-item"
+    <b-list-group class="w-50 p-3 mb-1 mx-auto">
+      <b-list-group-item class="h5 list-item" @click="showRecipe"
         >Cras justo odio</b-list-group-item
       >
       <b-list-group-item class="h5 list-item"
@@ -19,3 +19,13 @@
     </b-list-group>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    showRecipe() {
+      console.log("hello");
+    }
+  }
+};
+</script>
