@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Dashboard from '../views/Dashboard.vue'
 import Profile from '../views/Profile.vue'
 import Form from '../components/Form.vue'
+import Recipe from '../components/Recipe.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/form',
     name: 'form',
     component: Form
+  },
+  {
+    path: '/recipe/:recipe_id',
+    name: 'recipe',
+    component: Recipe
   }
 ]
 
