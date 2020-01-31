@@ -4,7 +4,7 @@
       <template v-slot:header>Dashboard</template>
       <hr class="my-4" />
       <RecipeList :recipes="recipes" />
-      <b-button class="btn-dash" href="#">Add New Recipe</b-button>
+      <b-button class="btn-dash" href="/form">Add New Recipe</b-button>
     </b-jumbotron>
   </div>
 </template>
