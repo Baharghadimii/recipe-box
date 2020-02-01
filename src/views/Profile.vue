@@ -7,7 +7,7 @@
   </div>
 </template>
 <script>
-import { mapState } from "vuex";
+import { mapGetters } from "vuex";
 export default {
   data() {
     return {
@@ -15,10 +15,10 @@ export default {
     };
   },
   computed: {
-    ...mapState(["recipes"])
+    ...mapGetters(["getTotalNumRecipe"])
   },
   mounted() {
-    const numberOfRecipes = this.recipes.length;
+    const numberOfRecipes = this.getTotalNumRecipe;
     this.numRecipe = numberOfRecipes;
   }
 };
