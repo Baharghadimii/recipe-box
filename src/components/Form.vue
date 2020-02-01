@@ -28,12 +28,15 @@
         ></b-form-textarea>
       </b-form-group>
       <b-button type="reset" class="btn-form reset">Reset</b-button>
-      <b-button type="submit" class="btn-form submit">Submit</b-button>
+      <b-button type="submit" class="btn-form submit" @submit.prevent
+        >Submit</b-button
+      >
     </b-form>
   </div>
 </template>
 
 <script>
+import { mapActions } from "vuex";
 export default {
   data() {
     return {
@@ -45,22 +48,22 @@ export default {
     };
   },
   methods: {
-    onSubmit(evt) {
-      evt.preventDefault();
-      alert(JSON.stringify(this.form));
+    ...mapActions(["addRecipe"]),
+    onSubmit(event) {
+      event.preventDefault();
+      const { name, ingredients, instruction } = this.form;
+      const payload = {
+        recipe: { name, ingredients, instruction }
+      };
+      this.addRecipe(payload);
+      this.onReset(event);
     },
-    onReset(evt) {
-      evt.preventDefault();
+    onReset(event) {
+      event.preventDefault();
       // Reset our form values
-      this.form.email = "";
       this.form.name = "";
-      this.form.food = null;
-      this.form.checked = [];
-      // Trick to reset/clear native browser form validation state
-      this.show = false;
-      this.$nextTick(() => {
-        this.show = true;
-      });
+      this.form.ingredients = "";
+      this.form.instruction = "";
     }
   }
 };
