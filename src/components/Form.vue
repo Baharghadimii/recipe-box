@@ -28,9 +28,7 @@
         ></b-form-textarea>
       </b-form-group>
       <b-button type="reset" class="btn-form reset">Reset</b-button>
-      <b-button type="submit" class="btn-form submit" @submit.prevent
-        >Submit</b-button
-      >
+      <b-button type="submit" class="btn-form submit">Submit</b-button>
     </b-form>
   </div>
 </template>
