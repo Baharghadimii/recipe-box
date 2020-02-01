@@ -24,7 +24,7 @@ const routes = [
     component: Form
   },
   {
-    path: '/recipe/:recipe_id',
+    path: '/recipes/:id',
     name: 'recipe',
     component: Recipe
   }
