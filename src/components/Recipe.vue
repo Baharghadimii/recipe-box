@@ -13,7 +13,7 @@
       <b-card-text>
         <b>Recipe Instruction:</b> {{ recipe.instruction }}
       </b-card-text>
-      <b-button type="submit" class="btn-form submit">Back</b-button>
+      <b-button type="submit" href="/" class="btn-form submit">Back</b-button>
     </b-card>
   </div>
 </template>
