@@ -3,14 +3,14 @@
     <h4>{{ recipe.name }}</h4>
     <b-card
       v-bind:img-src="recipe.image"
-      img-alt="Card image"
+      img-alt="Card image card-image"
       img-left
-      class="mb-3"
+      class="mb-4 card-image"
     >
-      <b-card-text
+      <b-card-text class="card-text"
         ><b> Recipe Ingredients:</b> {{ recipe.ingredients }}
       </b-card-text>
-      <b-card-text>
+      <b-card-text class="card-text">
         <b>Recipe Instruction:</b> {{ recipe.instruction }}
       </b-card-text>
       <b-button type="submit" href="/" class="btn-form submit">Back</b-button>
